@@ -12,6 +12,7 @@ struct ReviewApiResponse: Decodable {
     let results: [Review]
     let totalPages, totalResults: Int
 
+    
     enum CodingKeys: String, CodingKey {
         case id, page, results
         case totalPages = "total_pages"
